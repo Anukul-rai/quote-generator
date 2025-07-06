@@ -21,7 +21,9 @@ function Card() {
         }
     };
 
-    
+    useEffect(() => {
+        fetchApi(); // auto-load one quote on mount
+    }, []);
 
     return (
         <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-400 to-pink-900 px-4">
